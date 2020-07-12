@@ -39,10 +39,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|string|
-|image|string|null: false|
-|user_id|integer|null: false|
-|group_id|integer|null: false|
+|text|text|
+|image|string|
+|user_id|integer|null: false,foreign_key: true|
+|group_id|integer|null: false,foreign_key: true|
 
 ### Association
 
