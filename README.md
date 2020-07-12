@@ -18,8 +18,8 @@
 
 ### Association
 - has_many :groups_users
-- has_many :chat
-- has_many :image
+- has_many :chats
+
 
 ## userテーブル
 
@@ -32,29 +32,19 @@
 
 ### Association
 - has_many :groups_users
-- has_many :chat
-- has_many :image
+- has_many :chats
+
 
 ## chatテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |chat_id|integer|null: false, foreign_key: true|
-
+|image|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :image
+
 - belongs_to :user
 - belongs_to :group
 
-## imageテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|image_id|integer|null: false, foreign_key: true|
-
-
-### Association
-- belongs_to :chat
-- belongs_to :user
-- belongs_to :group
