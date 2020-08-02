@@ -7,10 +7,6 @@
   display: flex;
 }
 
-$color: #ffffff;
-$color2: #999999;
-$color3: #333333;
-$color4: #434a54;
 
 .side_bar {
   width: 300px;
@@ -29,12 +25,12 @@ $color4: #434a54;
       justify-content: space-between;
       &__user_name{
         font-size: 16px;
-        color: $color;
+        color: $white;
       }
       &__icon{
         width: 60px;
         a{
-          color: $color;
+          color: $white;
           text-decoration: none;
           padding: 5px;
         }
@@ -48,13 +44,13 @@ $color4: #434a54;
     height: calc(100vh - 100px);
     width: 300px;
     &__theme{
-      color: $color;
+      color: $white;
       font-size: 15px;
       padding-top: 20px;
       padding-bottom: 5px;
     }
     &__message{
-      color: $color;
+      color: $white;
       font-size: 11px;
       padding-bottom: 40px;
     }
@@ -63,7 +59,7 @@ $color4: #434a54;
 
 .chat_main  {
   width: calc(100vw - 300px);
-  background-color: $color;
+  background-color: $white;
   height: 100vh;
   &__group_info{
     height: 100px;
@@ -75,14 +71,14 @@ $color4: #434a54;
       margin-left: 40px;
     }
       &__test{
-        color: $color3;
+        color: $black;
         margin-top: 35px;
         margin-bottom: 15px;
         font-size: 20px;
       }
         
       &__name{
-        color: $color2;
+        color: $gray;
         font-size: 12px;
       }
         
@@ -112,16 +108,16 @@ $color4: #434a54;
       padding-bottom: 12px;
       &__masa{
         font-size: 16px;
-        color: $color3;
+        color: $black;
       }
       &__date{
         font-size: 12px;
-        color: $color2;
+        color: $gray;
       }
     }
     &__messege{
       padding-bottom: 46px;
-      color: $color4;
+      color: $darkgray;
       font-size: 14px;
     }
     &__name2{
@@ -129,16 +125,16 @@ $color4: #434a54;
       display: flex;
       &__masa{
         font-size: 16px;
-        color: $color3;
+        color: $black;
       }
       &__date{
         font-size: 12px;
-        color: $color2;
+        color: $gray;
       }
     }
     &__massege2{
       padding-bottom: 46px;
-      color: $color4;
+      color: $darkgray;
       font-size: 14px;
     }
   }
@@ -159,13 +155,12 @@ $color4: #434a54;
       margin-right: 15px;
       position: relative;
       &__messege{
-        color: $color4;
+        color: $darkgray;
         margin-left: 10px;
       }
       &__icon{
         margin-right: 10px;
         position: absolute;
-        top: 10px;
         right: 10px;
         &__file{
           display: none;
