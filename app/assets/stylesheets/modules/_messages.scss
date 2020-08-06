@@ -29,6 +29,7 @@
       }
       &__icon{
         width: 60px;
+        display: flex;
         a{
           color: $white;
           text-decoration: none;
