@@ -44,16 +44,18 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     width: 300px;
-    &__theme{
-      color: $white;
-      font-size: 15px;
-      padding-top: 20px;
-      padding-bottom: 5px;
-    }
-    &__message{
-      color: $white;
-      font-size: 11px;
-      padding-bottom: 40px;
+    &__group{
+      &__name{
+        color: $white;
+        font-size: 15px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+      }
+      &__message{
+        color: $white;
+        font-size: 11px;
+        padding-bottom: 40px;
+      }
     }
   } 
 }
