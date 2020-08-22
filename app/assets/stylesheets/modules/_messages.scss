@@ -100,16 +100,16 @@
       }
     }
   }
-  &__massage_list{
+  .message{
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding-left: 40px;
-    &__name{
+    .upper-message{
       justify-content: space-between;
       display: flex;
       padding-top: 35px;
       padding-bottom: 12px;
-      &__masa{
+      &__user-name{
         font-size: 16px;
         color: $black;
       }
@@ -118,71 +118,88 @@
         color: $gray;
       }
     }
-    &__messege{
+    .lower-message{
       padding-bottom: 46px;
       color: $darkgray;
       font-size: 14px;
     }
-    &__name2{
-      justify-content: space-between;
-      display: flex;
-      &__masa{
-        font-size: 16px;
-        color: $black;
+      .lower-message__image{
+
       }
-      &__date{
-        font-size: 12px;
-        color: $gray;
-      }
-    }
-    &__massege2{
-      padding-bottom: 46px;
-      color: $darkgray;
-      font-size: 14px;
-    }
+    
   }
-  &__massage_form{
+  .form{
     height: 90px;
     background-color: #d2d2d2;
-    justify-content: space-between;
-      display: flex;
-    &__left{
-      line-height: 50px;
-      height: 50px;
-      justify-content: space-between;
-      display: flex;
-      margin-top: 20px;
-      margin-left: 40px;
-      background-color: white;
-      width: calc(100vw - 500px);
-      margin-right: 15px;
+    // // justify-content: space-between;
+    display: flex;
+    padding: 20px 40px;
+    // padding: 20px 40px;
+    // position: relative;
+    .new_message{
       position: relative;
-      &__messege{
-        color: $darkgray;
-        margin-left: 10px;
-      }
-      &__icon{
-        margin-right: 10px;
-        position: absolute;
-        right: 10px;
-        &__file{
-          display: none;
-        }
-      }
-    }
-    &__right{
+      width: 100%;
       height: 50px;
-      line-height: 50px;
-      margin-top: 20px;
-      width: 100px;
-      margin-right: 40px;
-      background-color: #38aef0;
-      color: white;
-      text-align: center;
-      cursor: pointer;
+      display: flex;
+      .form__new__left{
+        line-height: 50px;
+        height: 50px;
+        justify-content: space-between;
+        display: flex;
+        // margin-top: 20px;
+        // margin-left: 40px;
+        background-color: white;
+        width: 100%;
+        margin-right: 15px;
+        // position: relative;      
+        color: $darkgray;
+        padding-left: 10px;
+      }
+      .form__new__mask{
+        position: absolute;
+        // position: relative;
+        right: 110px;
+        top: 10px;
+        &__image{
+          // position: absolute;
+          // position: relative;
+          &__icon{
+            margin-right: 10px;
+            // position: absolute;
+            // right: 10px;
+            // top: 10px;
+          }
+          &__hidden{
+            display: none;
+          }
+          
+          }
+        }
+      
+      .form__new__right{
+        height: 50px;
+        line-height: 50px;
+        // margin-top: 20px;
+        width: 100px;
+        // margin-right: 40px;
+        background-color: #38aef0;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+      }
     }
   }
 }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+
 
 
 
