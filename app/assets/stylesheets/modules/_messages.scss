@@ -103,7 +103,6 @@
     }
   }
   .message{
-    // height: calc(100vh - 190px);
     background-color: #fafafa;
     padding-left: 40px;
     .upper-message{
@@ -131,15 +130,11 @@
     
   }
   .form{
-    // position: fixed;
     width: calc(100vw - 300px);
     height: 90px;
     background-color: #d2d2d2;
-    // // justify-content: space-between;
     display: flex;
     padding: 20px 40px;
-    // padding: 20px 40px;
-    // position: relative;
     .new_message{
       position: relative;
       width: 100%;
@@ -150,28 +145,19 @@
         height: 50px;
         justify-content: space-between;
         display: flex;
-        // margin-top: 20px;
-        // margin-left: 40px;
         background-color: white;
         width: 100%;
-        margin-right: 15px;
-        // position: relative;      
+        margin-right: 15px;    
         color: $darkgray;
         padding-left: 10px;
       }
       .form__new__mask{
         position: absolute;
-        // position: relative;
         right: 110px;
         top: 10px;
         &__image{
-          // position: absolute;
-          // position: relative;
           &__icon{
             margin-right: 10px;
-            // position: absolute;
-            // right: 10px;
-            // top: 10px;
           }
           &__hidden{
             display: none;
@@ -183,9 +169,7 @@
       .form__new__right{
         height: 50px;
         line-height: 50px;
-        // margin-top: 20px;
         width: 100px;
-        // margin-right: 40px;
         background-color: #38aef0;
         color: white;
         text-align: center;
