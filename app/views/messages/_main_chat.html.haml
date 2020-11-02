@@ -12,6 +12,7 @@
 
   .messages
     = render @messages
+    -# = render partial: 'hoge', locals: { hoge: hoge }
   
   .form
     = form_for [@group, @message], class: 'form__new' do |f|
